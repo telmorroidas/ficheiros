@@ -20,15 +20,15 @@ public class ManipulaFicheiros {
             System.out.println("5- ler um ficheiro");
             System.out.println("6- mostrar lista de ficheiros");
             System.out.println("0- sair");
-            System.out.println("selecione a opção pretendida");
+            System.out.println("selecione a opção pretendida\n");
             op= ler.nextInt();
             switch(op){
                 case 1: Ficheiro.criaFicheiro(); break;
-                case 2: Ficheiro.criaFicheiro(); break;
-                case 3: Ficheiro.criaFicheiro(); break;
-                case 4: Ficheiro.criaFicheiro(); break;
-                case 5: Ficheiro.criaFicheiro(); break;
-                case 6: Ficheiro.criaFicheiro(); break;
+                case 2: Ficheiro.verificaSeExiste(); break;
+                case 3: Ficheiro.escreveNoFinalFicheiro(); break;
+                case 4: Ficheiro.escreveFicheiroNovo(); break;
+                case 5: Ficheiro.mostraConteudoFicheiro(); break;
+                case 6: Ficheiro.mostraListaFicheiros(); break;
                 case 0: break;
             }
         }while(op!= 0);
